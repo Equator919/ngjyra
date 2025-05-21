@@ -170,13 +170,15 @@
   .main__btn {
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     border: none;
-    padding: 20px 60px;
-    border-radius: 4px;
-    margin-top: 2rem;
-    font-size: 1.8rem;
+    
     cursor: pointer;
     color: #fff;
     transition: all 0.35s ease;
+    padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  margin: 50px 5px;
   }
   
   .main__btn:hover {
@@ -489,6 +491,16 @@
     margin-bottom: 2rem;
   }
 }
-
+#colorButton {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px 5px;
+}
 
 

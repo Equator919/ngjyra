@@ -31,7 +31,8 @@
       <div class="hero__container">
         <h1 class="hero__heading">Zgjedh ngjyrat <span>Tuaja</span></h1>
         <p class="hero__description">Zgjedhje të pafundshme</p>
-        <button class="main__btn"><a href="https://cssgradient.io/">Shfleto</a></button>
+        <button  class="main__btn"><a href="https://cssgradient.io/">Shfleto</a></button>
+        <button id="colorButton">Click me!</button>
       </div>
     </div>
        <!-- ======= Seksioni i Dëshmive ======= -->
@@ -169,5 +170,16 @@
   </div>
 </footer>
 <script src="services.js"></script>
+<script>
+     const button = document.getElementById('colorButton');
+
+const colors = ['#3498db', '#e74c3c', '#2ecc71', '#9b59b6', '#f1c40f', '#1abc9c', '#e67e22'];
+let colorIndex = 0;
+
+button.addEventListener('click', () => {
+  colorIndex = (colorIndex + 1) % colors.length;
+  button.style.backgroundColor = colors[colorIndex];
+});
+</script>
 </body>
 </html>
