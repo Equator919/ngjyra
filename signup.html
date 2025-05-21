@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login/Register</title>
+  <link rel="stylesheet" href="login.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+</head>
+<body>
+
+    
+    <nav class="navbar">
+        <div class="navbar__container">
+          <button><a href="index.html" id="navbar__logo">go back</a> </button>
+        </div>
+      </nav><Br>
+      
+
+<div class="container" id="container">
+  <!-- Forma për regjistrim -->
+  <div class="form-container sign-up-container">
+    <form action="#">
+      <h1>Krijo Llogari</h1>
+      <div class="social-container">
+        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <span>ose përdor emailin për regjistrim</span>
+      <input type="text" placeholder="Emri" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Fjalëkalimi" />
+      <button>Regjistrohu</button>
+    </form>
+  </div>
+
+  <!-- Forma për identifikim -->
+  <div class="form-container sign-in-container">
+    <form action="#">
+      <h1>Identifikohu</h1>
+      <div class="social-container">
+        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <span>ose përdor emailin dhe fjalëkalimin</span>
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Fjalëkalimi" />
+      <a href="#">Keni harruar fjalëkalimin?</a>
+      <button>Identifikohu</button>
+    </form>
+  </div>
+
+  <!-- Paneli i animacionit -->
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-left">
+        <h1>Mirë se vini përsëri!</h1>
+        <p>Për të qëndruar i lidhur me ne, ju lutemi identifikohuni me të dhënat tuaja</p>
+        <button class="ghost" id="signIn">Identifikohu</button>
+      </div>
+      <div class="overlay-panel overlay-right">
+        <h1>Përshëndetje!</h1>
+        <p>Plotësoni të dhënat për të krijuar një llogari të re</p>
+        <button class="ghost" id="signUp">Regjistrohu</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
